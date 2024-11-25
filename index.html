@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even-Odd Checker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .custom-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4CAF50;
+            /* Greenish color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .icon {
+            margin-right: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container mt-5 pt-5">
+        <div class="card shadow-lg my-5">
+            <div class="card-header text-center bg-primary text-white">
+                <h3>Even-Odd Checker</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="numberInput" class="form-label">Enter a Number</label>
+                        <input type="number" class="form-control" id="numberInput" placeholder="Enter a number" min="0" required/>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success me-2" id="submit">Check</button>
+                        <button type="reset" class="btn btn-secondary" id="reset">Clear</button>
+                    </div>
+                </form>
+                <div id="result" class="mt-4 text-center"></div>
+            </div>
+        </div>
+
+
+        <div class="container text-center mt-5 pt-5">
+            <p class="custom-text">
+                <i class="fas fa-pencil-ruler icon text-primary"></i>
+                Design by 
+                <span class="">
+                    <a href="https://prothesbarai.github.io/prothesbarai/" class="text-decoration-none text-danger" target="_blank" rel="noopener noreferrer">Developer Prothes</a>
+                </span>
+            </p>
+        </div>
+
+
+
+
+        <div class="container text-center my-5">
+            <div class="d-flex justify-content-center mt-4">
+                <!-- First GitHub Link -->
+                <a href="https://github.com/developerprothes" target="_blank" class="btn btn-primary me-3" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Developer Prothes
+                </a>
+                <!-- Second GitHub Link -->
+                <a href="https://github.com/prothesbarai/" target="_blank" class="btn btn-secondary" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Prothes Barai
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Bootstrap JS Bundle (including Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link to the JavaScript file -->
+    <script src="main.js"></script>
+</body>
+
+</html>
